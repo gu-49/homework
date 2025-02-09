@@ -1,0 +1,10 @@
+.Delete-wrapper{
+  position: relative;
+  float:right;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.Delete-wrapper:hover{
+  color: #0048e5;
+}

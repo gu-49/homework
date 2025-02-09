@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+  <title>成績分析</title>
+</head>
+<script>
+  window.onload = function () {
+  init();
+  content();
+ 
+  }
+
+  function init(){
+    var options = {
+    title: {
+      text: "考試結果"              
+    },
+    data: [              
+    {
+      // Change type to "doughnut", "line", "splineArea", etc.
+      type: "column",
+      dataPoints: [
+        { label: "國文",  y: 10  },
+        { label: "數學", y: 15  },
+        { label: "物理", y: 25  },
+        { label: "英文",  y: 30  },
+        { label: "體育",  y: 28  }
+      ]
+    }
+    ]
+  };
+  
+  $("#chartContainer").CanvasJSChart(options);
+  }
+
+  function content(){
+      var chart = new CanvasJS.Chart("chartContainer2", {
+      animationEnabled: true,
+      theme: "light2",
+      title:{
+        text: "分數"
+      },
+      data: [{        
+        type: "line",
+        indexLabelFontSize: 16,
+        dataPoints: [
+          { y: 450 },
+          { y: 414},
+          { y: 520, indexLabel: "\u2191 highest",markerColor: "red", markerType: "triangle" },
+          { y: 460 },
+          { y: 450 },
+          { y: 500 },
+          { y: 480 },
+          { y: 480 },
+          { y: 410 , indexLabel: "\u2193 lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
+          { y: 500 },
+          { y: 480 },
+          { y: 510 }
+        ]
+      }]
+    });
+    chart.render();
+     $("#chartContainer2").CanvasJSChart(options);
+}
+ 
+  </script>
+<body>
+  <div id="chartContainer" style="top:150px;left:200px;height: 370px; width: 25%;display:inline-block;position: relative;"></div>
+  <div id="chartContainer2"  style="top:150px;position: relative;float: right;height: 370px; width: 25%;right: 200px;"></div>
+  
+</body>
+</html>

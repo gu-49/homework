@@ -1,0 +1,137 @@
+.app{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/* index總區域 */
+.Marquee{
+  position: relative;
+  top: 50px;
+  width: 100%;
+  height:808.63px;
+  z-index: 0;
+}
+/* 跑馬燈圖片 */
+.carousel-item-image{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/* 內容區域 */
+.Featured{
+  width: 1200px;
+  height: 438.63px;
+  position:absolute;
+  left:0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  float: left;
+}
+
+@keyframes fadein {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+/*精品推薦模組*/
+.homeRecommendItemWrapper{
+  position: relative;
+  width: 230.4px;
+  height: 91.36px;
+  border-radius:4%;
+  background-color:#ed5428;
+  margin-left: 4.8px;
+  margin-right: 4.8px;
+  animation: fadein 6s ease;/*呼叫fadein功能*/
+  float: left;
+}
+
+.homeRecommendItemWrapper2{
+  position: relative;
+  width: 230.4px;
+  height: 91.36px;
+  border-radius:4%;
+  background-color:#3876cd;
+  margin-left: 4.8px;
+  margin-right: 4.8px;
+  animation: fadein 10s ease;
+  float: left;
+}
+.homeRecommendItemWrapper3{
+  position: relative;
+  width: 230.4px;
+  height: 91.36px;
+  border-radius:4%;
+  background-color:#edaf3d;
+  margin-left: 4.8px;
+  margin-right: 4.8px;
+  animation: fadein 8s ease;
+  float: left;
+}
+.homeRecommendItemWrapper4{
+  position: relative;
+  width: 230.4px;
+  height: 91.36px;
+  border-radius:4%;
+  background-color:#55ab69;
+  margin-left: 4.8px;
+  margin-right: 4.8px;
+  animation: fadein 8s ease;
+  float: left;
+}
+.homeRecommendItemWrapper5{
+  position: relative;
+  width: 230.4px;
+  height: 91.36px;
+  border-radius:4%;
+  background-color:#ef6f2e;
+  margin-left: 4.8px;
+  margin-right: 4.8px;
+  animation: fadein 8s ease;
+  float: left;
+}
+
+.homeRecommendItemTitle{
+  width: 207.35px;
+  height: 66.63px; 
+  position: absolute;
+  left:0;
+  top: 0; 
+  bottom: 0; 
+  right: 0; 
+  margin:auto;
+}
+
+.homeRecommendItemTitle-center{
+  position: relative;
+  width: 207.35px;
+  height: 41.43px;
+  border-bottom: solid white 1px;
+}
+
+.homeRecommendItemTitle-centertext{
+  margin-left: 10px;
+  display: inline-block;
+  width: 160px;
+  height: 24px;
+  word-wrap: break-word;
+  word-break: normal;
+  position: relative;
+  color: #fff;
+  font-family: SJxinhei;
+  font-size: 16px;
+  top:5px;
+}
+
+.homeRecommendItemLabel{
+  position: relative;
+  width: 207.35px;
+  height: 24px;
+  font-size: 14px;
+  font-family: SimSun;
+  color: #fff;
+  display:table-cell; 
+  vertical-align:bottom;
+}

@@ -1,0 +1,247 @@
+#app{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+ 
+}
+
+ul.pagination {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+}
+
+ul.pagination li a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+ul.pagination li a:hover:not(.active) {background-color: #ddd;}
+
+.add-exercise-btn{
+ position:relative;
+ float: right;
+ width:70px;
+ height:24px;
+ border:solid #0e35e1 1px;
+ color:#0e35e1;
+ border-radius:3px;
+ line-height:24px;
+ font-size:12px;
+ left:10px;
+ top:4px;
+ cursor:pointer;
+ opacity:0.9;
+ margin-right: 10px;
+}
+
+.add-exercise-btn:hover{
+  cursor: pointer;
+  background: #0e35e1;
+  color: #fff;
+}
+
+.add-type-btn{
+  border: solid #0048e1 1px;
+  line-height: 30px;
+  width: 80px;
+  text-align: center;
+  border-radius: 3px;
+  color: #0048e1;
+  font-size: 13px;
+  display: inline-block;
+  cursor:pointer;
+}
+
+.add-type-btn:hover{
+  cursor: pointer;
+  background: #0e35e1;
+  color: #fff;
+}
+/*active當前正在執行的項目  */
+.add-type-btn-active{
+  border: solid #0048e1 1px;
+  line-height: 30px;
+  width: 80px;
+  text-align: center;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 13px;
+  display: inline-block;
+  cursor:pointer;
+  background: #0048e1;
+}
+/* 計數器 */
+.num-count-operate{
+ width: 40px;
+ height:36px;
+ background:#eee ;
+ text-align: center;
+ line-height: 36px;
+ float: left;
+ cursor: pointer;
+}
+
+.num-count-operate:hover{
+  background: #0048e1;
+ }
+.num-count-reduce{
+ border-top: solid 1px rgba(231,235,250,1);
+ border-left: solid 1px rgba(231,235,250,1);
+ border-bottom: solid 1px rgba(231,235,250,1);
+}
+
+.num-count-plus{
+  border-top: solid 1px rgba(231,235,250,1);
+  border-right: solid 1px rgba(231,235,250,1);
+  border-bottom: solid 1px rgba(231,235,250,1);
+ }
+
+.num-count-input-wrapper{
+  float: left;
+  width: 50px;
+}
+
+.answer{
+  width:100px;
+  line-height:40px;
+  height: 40px;
+  float:left;
+  color: #676767;
+  text-align: right;
+}
+
+/* 提交按鈕 */
+.sumbit-btn{
+  background: #0048e1;
+  width: 260px;
+  height: 40px;
+  line-height: 40px;
+  color:#fff;
+}
+.exercise-list-header{
+  width: 1180px;
+  height: 40px;
+  line-height: 40px;
+  background: rgba(247,248,252,1);
+  font-size: 13px;
+  color: #686868;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.exercise-list-header-icon{
+  position: absolute;
+  right: 10px;
+  top: 0px;
+}
+
+.exercise-list-header-icon:hover{
+  cursor: pointer;
+  color: #0048e5;
+}
+
+.exercise-list-add-btn{
+ margin-top: 45px;
+ float: right;
+  padding-right: 10px;
+  padding-bottom: 2px;
+ /* padding-bottom: 2px; margin-bottom: 5px; */
+}
+
+.taskBasketContentWrapper{
+  position: fixed; 
+  right: 0;
+  height: 100vh;
+  background: #fff;
+  z-index: 5;
+  border-left: solid 1px #0048e5;
+}
+
+.taskBasketBtn{
+  position: relative;
+  top:100px;
+  width:37px;
+  height:112px;
+  background: #1856dc;
+  text-align: center;
+  color:#fff;
+  border-radius: 4px;
+  font-family: SimSun;
+  z-index: 4;
+  cursor: pointer;
+  left: -38px;
+}
+
+.totalwapper{
+  position: absolute;
+  top: -5px;
+  width: 20px;
+  height:20px;
+  line-height: 20px;
+  text-align: center;
+  color:#fff;
+  background: red;
+  font-family: SimSun;
+  cursor: pointer;
+  left: -10px;
+  font-size: 12px;
+  border-radius: 50%;
+  z-index: 8;
+}
+
+.basketContent-wrapper{
+  position: absolute;
+  right: 130px;
+  top: 0px;
+}
+
+.basketContent-wrapper:hover{
+  cursor: pointer;
+  color: #0048e5;
+}
+
+.basketContent-empty{
+  position: relative;
+  color: #6F6F6F;
+  float: right;
+  right:10px;
+  top: 0px;
+}
+
+.basketContent-empty:hover{
+  color: red;
+  cursor: pointer;
+}
+
+.taskBasketPreviewBtnwrapper{
+  width:70px;
+  height:24px;
+  border:solid #ed5228 1px;
+  color:#ed5228;
+  text-align:center;
+  border-radius:3px;
+  line-height:24px;
+  font-size:12px;
+  position:relative;
+  left:10px;
+  top:4px;
+  cursor:pointer;
+  opacity:0.9;
+  margin:0 auto;
+}

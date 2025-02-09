@@ -1,0 +1,115 @@
+.header-wrapper{
+  width: 100%;
+  height: 50px;
+  background: #0048e5;
+  position: fixed;
+  z-index:10;
+}
+
+.header-content{
+  width: 1200px;
+  height: 50px;
+  margin: 0 auto;
+  line-height: 50px;
+  text-align: 50px;
+  position: relative;
+ /*  position: absolute;絕對定位 最靠近父級位置進行相對的絕對定位 */
+}
+
+.header-logo{
+  width: 21px;
+  height: 26.5px;
+}
+
+.header-title{
+  width: 81;
+  height: 16.5px;
+  line-height: 50px;
+  margin-left: 10px;/*設定div 內部物件間距*/
+}
+
+.header-user{
+  line-height: 50px;
+  text-align: 50px;
+  width: 120px;
+  height: 50px;
+  position: absolute;
+}
+
+.header-user-title{
+  font-size: 12px;
+  font-family: DengXian;
+  color: rgba(255, 255, 255,1);
+  text-align: center;  
+  padding:0 10px;
+}
+
+.header-user-title:hover{
+  cursor: pointer;
+  background: rgba(0,0,0,0.2);/*rgba背景模糊度*/
+}
+.header-user-img{
+  width:30px;
+  height:30px;
+  border-radius:50%; 
+}
+
+.nvbar-item{
+  /* 第一種設定水平float:left;  margin:0 20px; *//* display: inline-block; 行內區塊 可設定元素寬高/margin/padding ;可水平排列  */
+  float:left; 
+  width: 120px; 
+  text-align: center;
+}
+
+.nvbar-item-title{ 
+  height: 50px;
+  font-size: 16px;
+  font-family: DengXian;
+  color: rgba(255, 255, 255,1);
+  text-align: center;  
+  line-height: 50px;
+  padding:0 10px;
+  
+}
+.nvbar-item-title:hover{
+  cursor: pointer;
+  background: rgba(0,0,0,0.2);/*rgba背景模糊度*/
+}
+
+.nvbar-item-child{
+  display: none;/*隱藏下拉值 */
+  width:118px;
+  background: #fff;
+  border:solid #0048e5 1px;
+  border-top: 0px;
+  box-shadow: 0 0 5px #ccc;
+  border-radius: 0 0 5px 5px;
+ 
+}
+
+
+.nvbar-item-child-title:hover{
+  cursor: pointer;/* 變化鼠標樣式 */
+  color: #0048e5;
+}
+/* 頁尾 */
+.footer-wrapper{
+  position: relative;
+  width: 100%;
+  height: 34.4px;
+  z-index:7;
+  margin: 0 auto;
+  line-height: 34.4px;
+  text-align: center;
+  font-size: 13px;
+  background: #0048e5;
+  color: rgba(255,255,255,1);
+}
+
+.task_Positioning{
+  height: 42px;
+  float: left;
+  line-height: 42px;
+  text-align: 42px;
+ 
+}

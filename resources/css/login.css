@@ -1,0 +1,112 @@
+/*html,body{
+  margin: 0;v外邊框距離瀏覽器邊界
+  padding: 0;邊框距離內部內容的寬度
+}*/
+#app{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;/*頁面固定*/
+  background-color:#2165d1;
+  position: relative;
+}
+.main{
+  width: 100%;
+  height: 100%;
+ /*display: flex;父級外元素*/
+  position: relative;
+}
+.left{
+  float: left;
+  width: 40%;      /*flex:1;平分父級*/
+  height: 100%;
+  position: relative;
+  display: flex;/*橫向排列*/
+  /* flex-direction: column; 縱向排列 */
+  justify-content: center;/*实现水平居中*/
+  align-items: center;/*实现垂直居中*/
+}
+.left-img{
+  width: 780px;
+  height: 530px;
+  position: absolute;
+  z-index: 0;
+}
+.right{
+  float: right;
+  width: 60%; /*flex:1;平分父級*/
+  height: 100%;
+  display: flex;/*橫向排列*/
+  /* flex-direction: column; 縱向排列 */
+  justify-content: center;/*实现水平居中*/
+  align-items: center;/*实现垂直居中*/
+  position: relative;
+}
+
+.right-img{
+  position: absolute;
+  z-index: 0;
+  width: 642px;
+  height: 642px;
+  display: inline-block;/*置中*/  
+}
+
+.top-img{
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  position: absolute;
+  display: flex;/*橫向排列*/
+  /* flex-direction: column; 縱向排列 */
+  justify-content: center;/*实现水平居中*/
+  align-items: center;/*实现垂直居中*/
+}
+
+.logo{
+  position: absolute;
+  width: 98px;
+  height: 98px;
+  top: 20%;
+}
+.title{
+  position: absolute;
+  width: 257px;
+  height: 58px;
+  top:35%;
+}
+
+.right-type {
+  position: absolute;
+  z-index:1;
+  width:320px;
+  height: 100%;
+  top: 45%;
+}
+
+.right-type-content{
+  width:100%;
+  height:50px;
+  background:#f5faff;
+  margin-top:20px;
+  border-radius:4px;/*元素的外边框圆角*/
+}
+
+.right-type-content-img{
+  float:left;
+  line-height:50px;
+  margin-left:5px;/*靠左5px*/
+  /*clear:both; 清空float,不受其它float的設定影響*/
+}
+.right-type-content-input{
+  float:left;
+  line-height:50px;
+  margin-left:5px;
+}
+
+.type-button{
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  text-align:center;
+  margin-top:50px;
+}
+
